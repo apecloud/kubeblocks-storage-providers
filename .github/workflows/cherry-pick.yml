@@ -20,7 +20,7 @@ jobs:
       - name: Automatic Cherry Pick
         uses: apecloud-inc/gha-cherry-pick@v1
         env:
-          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ env.GH_TOKEN }}
 
   label-pick:
     if: ${{ github.event.issue.pull_request != '' && (contains(github.event.comment.body, '/pick') || contains(github.event.comment.body, '/nopick')) && ! contains(github.event.comment.body, 'Auto Cherry-pick Instructions') }}
