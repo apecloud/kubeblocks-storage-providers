@@ -1,0 +1,21 @@
+name: Release Version
+
+on:
+  workflow_dispatch:
+    inputs:
+      VERSION:
+        description: 'The version of release'
+        required: true
+        default: ''
+
+run-name: ref_name:${{ github.ref_name }} release_version:${{ inputs.VERSION }}
+
+env:
+  GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+jobs:
+  release-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout branch ${{ github.ref_name }}
+        uses: actions/checkout@v4
