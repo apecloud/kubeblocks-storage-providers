@@ -11,7 +11,7 @@ A `StorageProvider` encapsulates:
 - **Access parameters**: Credentials, endpoints, buckets, and other provider-specific settings
 - **Parameter schemas**: Validation rules and descriptions for required/optional parameters
 
-For detailed API reference, see the [official documentation](https://kubeblocks.io/docs/preview/user_docs/references/api-reference/dataprotection#dataprotection.kubeblocks.io/v1alpha1.StorageProvider).
+For detailed API reference, see the [official documentation](https://kubeblocks.io/docs/release-1_0/user_docs/references/api-reference/dataprotection#dataprotection.kubeblocks.io/v1alpha1.StorageProvider).
 
 ## Supported Storage Providers
 
@@ -53,7 +53,7 @@ KubeBlocks supports two methods to access remote object storage:
 - Use **Tool** method for simpler setups without CSI driver installation
 - Use **Mount** method for enhanced security in multi-tenant scenarios
 
-The access method is specified in the `accessMethod` field when creating a BackupRepo. For more details, refer to the [BackupRepo documentation](https://kubeblocks.io/docs/preview/user_docs/concepts/backup-and-restore/backup/backup-repo#access-backuprepo).
+The access method is specified in the `accessMethod` field when creating a BackupRepo. For more details, refer to the [BackupRepo documentation](https://kubeblocks.io/docs/release-1_0/user_docs/concepts/backup-and-restore/backup/backup-repo#access-backuprepo).
 
 ### Installation
 
@@ -176,13 +176,13 @@ kubectl apply -f backuprepo.yaml
 kubectl get backuprepo
 ```
 
-For more details on configuring and using BackupRepo, refer to the [official BackupRepo documentation](https://kubeblocks.io/docs/preview/user_docs/concepts/backup-and-restore/backup/backup-repo).
+For more details on configuring and using BackupRepo, refer to the [official BackupRepo documentation](https://kubeblocks.io/docs/release-1_0/user_docs/concepts/backup-and-restore/backup/backup-repo).
 
 ### Using BackupRepo for Database Backups
 
 Once a `BackupRepo` is created, you can reference it in your `BackupPolicy` to create a backup.
 
-For more details on configuring and using BackupPolicy, refer to the [official BackupPolicy documentation](https://kubeblocks.io/docs/preview/user_docs/concepts/backup-and-restore/backup/configure-backuppolicy).
+For more details on configuring and using BackupPolicy, refer to the [official BackupPolicy documentation](https://kubeblocks.io/docs/release-1_0/user_docs/concepts/backup-and-restore/backup/configure-backuppolicy).
 
 ## Contributing
 
@@ -196,6 +196,6 @@ Contributions are welcome! If you want to add support for a new storage provider
 ## References
 
 - [KubeBlocks Official Documentation](https://kubeblocks.io/)
-- [StorageProvider API Reference](https://kubeblocks.io/docs/preview/user_docs/references/api-reference/dataprotection#dataprotection.kubeblocks.io/v1alpha1.StorageProvider)
-- [BackupRepo Configuration Guide](https://kubeblocks.io/docs/preview/user_docs/concepts/backup-and-restore/backup/backup-repo)
-- [KubeBlocks Backup and Restore](https://kubeblocks.io/docs/preview/user_docs/concepts/backup-and-restore/introduction)
+- [StorageProvider API Reference](https://kubeblocks.io/docs/release-1_0/user_docs/references/api-reference/dataprotection#dataprotection.kubeblocks.io/v1alpha1.StorageProvider)
+- [BackupRepo Configuration Guide](https://kubeblocks.io/docs/release-1_0/user_docs/concepts/backup-and-restore/backup/backup-repo)
+- [KubeBlocks Backup and Restore](https://kubeblocks.io/docs/release-1_0/user_docs/concepts/backup-and-restore/introduction)
