@@ -7,7 +7,7 @@ This repository contains a collection of `StorageProvider` Custom Resources (CRs
 `StorageProvider` is a Custom Resource Definition (CRD) in KubeBlocks that represents storage providers for backup repositories. It defines how different storage systems can be accessed and configured for storing database backups.
 
 A `StorageProvider` encapsulates:
-- **Storage access methods**: CSI driver configurations, datasafed tool configurations
+- **Storage access methods**: CSI driver configurations, [datasafed](https://github.com/apecloud/datasafed) configurations
 - **Access parameters**: Credentials, endpoints, buckets, and other provider-specific settings
 - **Parameter schemas**: Validation rules and descriptions for required/optional parameters
 
